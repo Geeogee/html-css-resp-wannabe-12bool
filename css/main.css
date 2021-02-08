@@ -4,19 +4,94 @@ body {
   font-size: 10px;
 }
 
+.valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 div[class*="col-"] {
   /* debug*/
   background-color: red; /*#428bca;*/
-  min-height: 200px;
   border: 1px solid #000;
+  min-height: 200px;
+  position: relative;
 }
+
+/* Typography */
 
 h1#mainTitle {
   color: #FFF;
   font-weight: 900;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.descrFont {
+  font-size: 1rem;
+}
+
+/* Section Lessons */
+h3 {
+  margin-bottom: 20px;
+}
+
 /* debug */
 .row .row > div[class*="col-"] {
   background-color: green;
 }
+
+
+ /* Small Screen CSS */
+@media screen and (max-width: 768px) {
+
+  /* Section Lessons */
+  h3 {
+    font-size: 2rem;
+  }
+
+  .section-lessons .image-column > img {
+    height: 200px;
+  }
+
+  .section-lessons .text-column {
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+}
+
+ /* Medium Screen CSS */
+@media screen and (max-width: 991px) and (min-width: 767px) {
+
+  /* Section Lessons */
+  .section-lessons .image-column > img {
+    height: 100px;
+  }
+
+  .section-lessons .text-column {
+    padding: 10px 10px;
+    text-align: justify;
+  }
+
+}
+
+ /* Large Screen CSS */
+@media screen and (min-width: 992px) {
+
+  /* Section Lessons */
+ .section-lessons .image-column > img {
+   height: 200px;
+ }
+
+ .section-lessons .text-column {
+   padding: 10px 50px;
+   text-align: center;
+ }
+
+
+ }
