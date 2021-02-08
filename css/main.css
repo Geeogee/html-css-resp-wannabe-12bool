@@ -4,11 +4,10 @@ body {
   font-size: 10px;
 }
 
-.valign-center {
+.valign {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 div[class*="col-"] {
@@ -26,6 +25,11 @@ h1#mainTitle {
   font-weight: 900;
 }
 
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -35,9 +39,25 @@ h3 {
   font-size: 1rem;
 }
 
+/* Main */
+main h3 {
+  margin-bottom: 30px;
+}
+
+.image-column img {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Section Lessons */
-h3 {
-  margin-bottom: 20px;
+.section-lessons h2 {
+  text-align: center;
+}
+
+
+/* Section How It Works */
+.section-howItWorks {
+  background-color: #f9f9f9;
 }
 
 /* debug */
@@ -68,6 +88,10 @@ h3 {
  /* Medium Screen CSS */
 @media screen and (max-width: 991px) and (min-width: 767px) {
 
+  .image-column > img {
+    height: 120px;
+  }
+
   /* Section Lessons */
   .section-lessons .image-column > img {
     height: 100px;
@@ -78,20 +102,31 @@ h3 {
     text-align: justify;
   }
 
+
 }
 
  /* Large Screen CSS */
 @media screen and (min-width: 992px) {
 
-  /* Section Lessons */
- .section-lessons .image-column > img {
+  .image-column > img {
    height: 200px;
  }
 
+ /* Section Lessons */
  .section-lessons .text-column {
    padding: 10px 50px;
    text-align: center;
  }
+
+ /* Section How it works */
+ .section-howItWorks .image-column {
+   border-radius: 50%;
+ }
+
+ .section-howItWorks .text-column {
+   padding: 10px 50px;
+   text-align: center;
+
 
 
  }
