@@ -1,0 +1,22 @@
+/* Base CSS */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+div[class*="col-"] {
+  /* debug*/
+  background-color: red; /*#428bca;*/
+  min-height: 200px;
+  border: 1px solid #000;
+}
+
+h1#mainTitle {
+  color: #FFF;
+  font-weight: 900;
+}
+
+/* debug */
+.row .row > div[class*="col-"] {
+  background-color: green;
+}
