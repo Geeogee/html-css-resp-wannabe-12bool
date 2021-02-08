@@ -5,10 +5,10 @@ body {
 }
 
 /* Typography */
-
 h1#mainTitle {
   color: #FFF;
   font-weight: 900;
+  font-size: 3rem;
 }
 
 h2 {
@@ -23,6 +23,14 @@ h3 {
 
 .descrFont {
   font-size: 1rem;
+}
+
+/* Header */
+
+header {
+  background-color: #428bca;
+  height: 60px;
+  line-height: 60px;
 }
 
 /* Main */
@@ -54,16 +62,16 @@ main h3 {
   margin: 0 auto;
 }
 
-
-
-
-
 /* Section How It Works */
 .section-howItWorks, .section-chooseUs {
   background-color: #f9f9f9;
 }
 
 /* Section Choose Us */
+.section-chooseUs .image-column {
+  margin-top: 15px;
+}
+
 .section-chooseUs .image-column > img {
   background-color: #428bca;
   padding: 20px;
@@ -72,6 +80,8 @@ main h3 {
 
 .section-chooseUs .text-column {
   text-align: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 15px;
 }
 
  /* Small Screen CSS */
@@ -95,6 +105,11 @@ main h3 {
   .section-lessons .image-column > img {
     height: 200px;
   }
+
+  /* Section how it works */
+  .section-howItWorks .image-column {
+    margin-bottom: 30px;
+  }
 }
 
  /* Medium Screen CSS */
@@ -102,7 +117,6 @@ main h3 {
 
   .image-column > img {
     height: 120px;
-    vertical-align: bottom;
   }
 
   /* Section Lessons */
@@ -111,10 +125,18 @@ main h3 {
   }
 
   .section-lessons .text-column {
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
 
+  /* Section how it works */
+  .section-howItWorks h3 {
+    margin-top: 10px;
+    text-align: center;
+  }
 
+  .section-howItWorks .text-column {
+    padding: 10px 20px;
+  }
 }
 
  /* Large Screen CSS */
@@ -133,3 +155,5 @@ main h3 {
  .section-howItWorks .image-column {
    border-radius: 50%;
  }
+
+}
