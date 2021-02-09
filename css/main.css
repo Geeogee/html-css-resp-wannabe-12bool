@@ -134,7 +134,7 @@ main h3 {
 }
 
  /* Medium Screen CSS */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 767px) {
 
   h1#mainTitle {
     padding-left: 5px;
@@ -162,7 +162,7 @@ main h3 {
 }
 
  /* Large Screen CSS */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 
   .image-column > img {
    height: 200px;

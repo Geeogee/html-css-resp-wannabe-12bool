@@ -23,7 +23,7 @@ div[class*="col-"] {
 }
 
 /* Large screen */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 
   .col-lg-1 {
     width: calc(100% / 12);
@@ -125,7 +125,7 @@ div[class*="col-"] {
 }
 
 /* Medium screen */
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 767px) {
 
   .col-md-1 {
     width: calc(100% / 12);
